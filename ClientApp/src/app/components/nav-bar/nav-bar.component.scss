@@ -1,0 +1,32 @@
+.container{
+  max-width: 1350px;
+}
+
+.logo{
+  width: 80px;
+  max-height: 60px;
+}
+
+.links{
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.icon-cart{
+  color: green;
+  cursor: pointer;
+}
+
+.cart-no{
+  position: absolute;
+  font-size: 12px;
+  min-height: 20px;
+  min-width: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  top: -10px;
+  right: 36px;
+}
