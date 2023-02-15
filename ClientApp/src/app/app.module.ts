@@ -1,4 +1,4 @@
-import { ShopModule } from './shared/shop.module';
+import { HomeModule } from './components/home/home.module';
 import { CoreModule } from './components/core/core.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -24,7 +24,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     HttpClientModule,
     MatSidenavModule,
     CoreModule,
-    ShopModule
+    HomeModule
 
   ],
   providers: [],

@@ -1,15 +1,20 @@
 <header class="container justify-content-between d-flex flex-row align-items-center pt-2 mb-4 border-bottom">
 
-    <a href="/" class="text-dark text-decoration-none">
+    <a routerLink="/" class="text-dark text-decoration-none">
       <img class="logo" src="../../../assets/images/logo.png" alt="logo">
       <span class="fs-4">Brasilian Store</span>
     </a>
 
     <nav class="links">
-      <a class="me-3 py-2 fs-5 text-dark text-decoration-none" href="#">Home</a>
-      <a class="me-3 py-2 fs-5 text-dark text-decoration-none" href="#">Shop</a>
-      <a class="me-3 py-2 fs-5 text-dark text-decoration-none" href="#">Contact</a>
-      <a class="py-2 nav-link fs-5 text-dark text-decoration-none" href="#">About us</a>
+      <a class="me-3 py-2 fs-5 text-decoration-none"
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}">
+        Home
+      </a>
+      <a class="me-3 py-2 fs-5 text-decoration-none" routerLink="/shop" routerLinkActive="active">Shop</a>
+      <a class="me-3 py-2 fs-5 text-decoration-none" href="#" routerLinkActive="active">Contact</a>
+      <a class="py-2 nav-link fs-5 text-decoration-none" href="#" routerLinkActive="active">About us</a>
     </nav>
 
     <div class="d-flex align-items-center">

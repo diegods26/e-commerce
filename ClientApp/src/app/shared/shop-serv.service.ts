@@ -27,6 +27,10 @@ export class ShopServService {
     return this.http.get<Pagination<Product[]>>(this.baseApi + 'products', {params});
   }
 
+  getProductDetails(id: number){
+    return this.http.get<Product>(this.baseApi + 'products/' + id);
+  }
+
   getBrands(){
     return this.http.get<Brand[]>(this.baseApi + 'products/brands');
   }
