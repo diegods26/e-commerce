@@ -1,13 +1,13 @@
 <div class="container">
-  <div class="row">
+  <div class="row" *ngIf="types.length > 0 && brands.length > 0">
       <section class="col-3">
-        <h5 class="text-warning ms-3">Brands</h5>
+        <h4 class="text-warning ms-3">Sort</h4>
         <select class="form-select mb-4" (change)="onSortSelected($event)">
           <option *ngFor="let sort of sortOptions" [value]="sort.value">
             {{ sort.name }}
           </option>
         </select>
-        <h5 class="text-warning ms-3">Brands</h5>
+        <h4 class="text-warning ms-3">Brands</h4>
           <ul class="list-group">
             <li class="list-group-item"
               *ngFor="let brand of brands"
@@ -17,7 +17,7 @@
               {{ brand.name }}
             </li>
           </ul>
-          <h5 class="text-warning ms-3 mt-3">Types</h5>
+          <h4 class="text-warning ms-3 mt-3">Types</h4>
           <ul class="list-group">
             <li class="list-group-item"
               *ngFor="let type of types"

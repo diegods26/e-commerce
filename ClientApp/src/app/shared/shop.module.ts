@@ -8,6 +8,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { PagingHeaderComponent } from './pagin-header/paging-header.component';
 import { PagerComponent } from './pager/pager.component';
 import { ShopDetailsComponent } from './shop-details/shop-details.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -21,14 +22,16 @@ import { ShopDetailsComponent } from './shop-details/shop-details.component';
     CommonModule,
     PaginationModule.forRoot(),
     RouterModule,
-    ShopRoutingModule
+    ShopRoutingModule,
+    CarouselModule.forRoot()
   ],
   exports:[
     ShopComponent,
     PaginationModule,
     PagingHeaderComponent,
     PagerComponent,
-    ShopDetailsComponent
+    ShopDetailsComponent,
+    CarouselModule
   ]
 })
 export class ShopModule { }
