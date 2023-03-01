@@ -9,6 +9,7 @@ import { PagingHeaderComponent } from './pagin-header/paging-header.component';
 import { PagerComponent } from './pager/pager.component';
 import { ShopDetailsComponent } from './shop-details/shop-details.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { OrderTotalsComponent } from './order-totals/order-totals.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     ProductItemComponent,
     PagingHeaderComponent,
     PagerComponent,
-    ShopDetailsComponent
+    ShopDetailsComponent,
+    OrderTotalsComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     PagingHeaderComponent,
     PagerComponent,
     ShopDetailsComponent,
-    CarouselModule
+    CarouselModule,
+    OrderTotalsComponent
   ]
 })
 export class ShopModule { }

@@ -1,3 +1,4 @@
+import { BasketService } from './shared/basket/basket.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,15 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
 
-  constructor(){}
+  constructor(private basketService: BasketService){}
 
   ngOnInit(): void{
-    // this.http.get<Pagination<Product[]>>('https://localhost:5001/api/products?pageSize=50').subscribe({
-    //   next: response => this.products = response.data,
-    //   error: error => console.log(error),
-    //   complete: () => {
-    //     console.log("Request completed");
-    //   }
-    // });
+    const basketId = localStorage.getItem('basket_id');
+    if(basketId) this.basketService.getBasket(basketId);
   }
 }
