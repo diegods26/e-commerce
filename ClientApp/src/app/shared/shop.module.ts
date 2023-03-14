@@ -10,6 +10,9 @@ import { PagerComponent } from './pager/pager.component';
 import { ShopDetailsComponent } from './shop-details/shop-details.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { OrderTotalsComponent } from './order-totals/order-totals.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TextInputComponent } from './text-input/text-input.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +21,17 @@ import { OrderTotalsComponent } from './order-totals/order-totals.component';
     PagingHeaderComponent,
     PagerComponent,
     ShopDetailsComponent,
-    OrderTotalsComponent
+    OrderTotalsComponent,
+    TextInputComponent
   ],
   imports: [
     CommonModule,
     PaginationModule.forRoot(),
     RouterModule,
     ShopRoutingModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    ReactiveFormsModule,
+    BsDropdownModule.forRoot()
   ],
   exports:[
     ShopComponent,
@@ -34,7 +40,10 @@ import { OrderTotalsComponent } from './order-totals/order-totals.component';
     PagerComponent,
     ShopDetailsComponent,
     CarouselModule,
-    OrderTotalsComponent
+    OrderTotalsComponent,
+    ReactiveFormsModule,
+    BsDropdownModule,
+    TextInputComponent
   ]
 })
 export class ShopModule { }

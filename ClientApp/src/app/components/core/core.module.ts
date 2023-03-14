@@ -1,3 +1,4 @@
+import { ShopModule } from './../../shared/shop.module';
 import { RouterModule } from '@angular/router';
 import { NavBarComponent } from './../nav-bar/nav-bar.component';
 import { NgModule } from '@angular/core';
@@ -22,7 +23,8 @@ import { ToastrModule } from 'ngx-toastr';
     ToastrModule.forRoot({
       positionClass: 'toast-top-right',
       preventDuplicates: true
-    })
+    }),
+    ShopModule
   ],
   exports: [
     NavBarComponent
